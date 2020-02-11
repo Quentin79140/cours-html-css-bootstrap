@@ -1,0 +1,315 @@
+/* DOCUMENT INFORMATION
+    -document: thé thème
+    -version:1.0.8
+    -autor:quentin  */
+
+/* COLOR
+    -defaut body text 
+    -h1         #eee
+    -h2         black
+    -h3
+    -button
+    -button:hover
+    
+    .icon       #117211
+    
+    -border */
+
+/* FONTS 
+    -default 
+    -subtitle
+*/
+/* CSS DIRECTORY 
+    1.=global
+    2.=header
+    3.=produits
+
+*/
+/*GLOBAL
+"""""""""""""""""" */
+
+html
+{
+    background-color: #ffffff;
+}
+
+h1,h2,h3,h4{
+    font-family: "lato",Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+h1
+{
+    color: #eee;
+    letter-spacing: -1px;
+    font-weight:300 ;
+    word-spacing: 8px;
+}
+h2{
+    color: black;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+h2:after
+{
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+h3{
+    font-size: 160%;
+
+}
+
+
+p
+{
+
+    font-size: 12px;
+    font-weight: 300;
+    height: 24px;
+}
+section
+{
+    padding: 30px 0 60px 0 ;
+}
+
+
+/* HEADER */
+
+header
+{
+    background-image: linear-gradient(rgba(8,242,96,0.4),rgba(7,117,230,0.6)), url(../image/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.home-title
+{
+    position: absolute;
+    top: 30%;
+
+}
+.home-title h1 
+{
+    font-size: 340%;
+    color: #ffffff;
+}
+.home-title h1 span
+{
+    font-weight: 700;
+}
+.home-title p
+{
+    color: #ffffff;
+}
+
+/* BUTTON */
+.btn
+{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s,border 1s;
+}
+.btn-full
+{
+    background-color: azure;
+    color: #c4231d;
+    
+    margin-right: 15px;
+}
+
+.btn-ghost
+{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+
+}
+.btn-full:hover
+{
+    background-color: #c4231d;
+    color: #ffffff;
+}
+.btn-ghost:hover{
+    background-color: #c4231d;
+    color: #ffffff;
+    border: 1px solid #c4231d;
+}
+
+/* PRODUITS */
+.produit-plus
+{
+    margin: 20px 0;
+
+}
+.produit-plus:hover .produits-icon
+{
+    color: #8d8484;
+    transform: translateX(20px);
+}
+
+.produits-img
+{
+    max-width: 100%;
+    height: auto;
+}
+.produits-icon
+{
+    font-size: 34px;
+    color: #117211;
+    transition: all 1s;
+
+}
+
+/* FAMILLE THES */
+
+.famille-the
+{
+    background-color: #749ceb66 ;
+}
+.famille-detail
+{
+    background: wheat;
+    padding-top: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+
+}
+
+.famille-detail img
+{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+
+}
+.famille-detail h4
+{
+    text-align: center;
+
+}
+.famille-detail p 
+{
+    text-align: center;
+}
+/* GALERIES PHOTOS */
+
+.galeri-img
+{
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+
+}
+.galeri-titre
+{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.galeri-titre h4
+{
+    color: white;
+}
+
+/* CLIENTS */
+
+.client
+{
+    background-image:linear-gradient(rgba(8,242,96,0.4),rgba(7,117,230,0.6)), url(../image/the-paysage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.client  h2
+{
+    color: white;
+}
+.client h2:hover
+{
+    background-color: #ffffff;
+}
+blockquote
+{
+    color: white;
+    padding:5px;
+    font-style: italic;
+    line-height: 130%;
+}
+blockquote:before
+{
+    content:"\201C";
+    font-size:800% ;
+    font-family: "sanchez",Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 30px;
+    left: 8px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+cite
+{
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+cite img
+{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* PACKS */
+
+.pack
+{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.pack h3{
+    color: green;
+    font-weight: 400;
+}
+.pack h4
+{
+    font-size: 200%;
+    font-weight: 100;
+
+}
+.pack-title
+{
+    padding:10px 10px 0 10px;
+    border-bottom: 1px solid green;
+}
+.pack-content ul
+{
+    list-style: none;
+    padding:20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
